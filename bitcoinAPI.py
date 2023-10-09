@@ -1,7 +1,7 @@
 
 import requests
 my_money = 4500
-api = 'a583af9e9d6a8f76'
+api = 'YOUR_API_KEY'
 response = requests.get('https://coinlib.io/api/v1/global?key=%s&pref=USD'% api)
 
 coin_price= int(response.json()["coins"])
